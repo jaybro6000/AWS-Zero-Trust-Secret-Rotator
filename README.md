@@ -25,7 +25,7 @@ This project demonstrates a **Zero Trust** approach to credential management by 
 
 * Create a new secret in **AWS Secrets Manager**.
 * Select **"Other type of secret"** and define a key-value pair (e.g., `db_password`).
-***Shows the naming convention `Production/Database/Password`.*
+## *Shows the naming convention `Production/Database/Password`.*
 * **<img width="1366" height="585" alt="The_Zero_Trust_Secret_Rotator_2" src="https://github.com/user-attachments/assets/2ee3738d-7150-4471-9919-e705503486b1" />
 
 ### **2. Create the Rotation Lambda**
