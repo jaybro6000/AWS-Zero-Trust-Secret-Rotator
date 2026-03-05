@@ -31,7 +31,6 @@ This project demonstrates a **Zero Trust** approach to credential management by 
 ### **2. Create the Rotation Lambda**
 
 * Author a Lambda function from scratch using the **Python 3.12** runtime.
-**Shows the initial function configuration.*
 ***<img width="1366" height="581" alt="The_Zero_Trust_Secret_Rotator_5" src="https://github.com/user-attachments/assets/ce93ef30-820f-4359-b499-c07e01392a5f" />
 
 ### **3. Configure Least Privilege Permissions**
