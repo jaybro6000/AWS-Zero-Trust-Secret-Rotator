@@ -36,7 +36,7 @@ This project demonstrates a **Zero Trust** approach to credential management by 
 ### **3. Configure Least Privilege Permissions**
 
 * Attach a policy to the Lambda's execution role allowing `secretsmanager:UpdateSecret`.
-***Shows the IAM policy attachment.*
+*Shows the IAM policy attachment.*
 * **<img width="1366" height="586" alt="The_Zero_Trust_Secret_Rotator_7" src="https://github.com/user-attachments/assets/1977d533-1352-4875-8283-a547cee48f5c" />
 
 ### **4. Implement the Rotation Logic**
