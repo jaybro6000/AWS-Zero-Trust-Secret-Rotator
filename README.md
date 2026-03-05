@@ -31,19 +31,20 @@ This project demonstrates a **Zero Trust** approach to credential management by 
 ### **2. Create the Rotation Lambda**
 
 * Author a Lambda function from scratch using the **Python 3.12** runtime.
-***<img width="1366" height="581" alt="The_Zero_Trust_Secret_Rotator_5" src="https://github.com/user-attachments/assets/ce93ef30-820f-4359-b499-c07e01392a5f" />
+## *Shows the initial function configuration.
+<img width="1366" height="581" alt="The_Zero_Trust_Secret_Rotator_5" src="https://github.com/user-attachments/assets/ce93ef30-820f-4359-b499-c07e01392a5f" />
 
 ### **3. Configure Least Privilege Permissions**
 
 * Attach a policy to the Lambda's execution role allowing `secretsmanager:UpdateSecret`.
-*Shows the IAM policy attachment.*
-* **<img width="1366" height="586" alt="The_Zero_Trust_Secret_Rotator_7" src="https://github.com/user-attachments/assets/1977d533-1352-4875-8283-a547cee48f5c" />
+## *Shows the IAM policy attachment.*
+<img width="1366" height="586" alt="The_Zero_Trust_Secret_Rotator_7" src="https://github.com/user-attachments/assets/1977d533-1352-4875-8283-a547cee48f5c" />
 
 ### **4. Implement the Rotation Logic**
 
 * The script generates a new 16-character alphanumeric string and updates the `SecretString` in the vault.
-* **<img width="1366" height="639" alt="The_Zero_Trust_Secret_Rotator_8" src="https://github.com/user-attachments/assets/fc4a0f08-04c7-4159-93a7-539ea7665136" />
-** - *Shows the Python code implementation.*
+## *Shows the Python code implementation.*
+<img width="1366" height="639" alt="The_Zero_Trust_Secret_Rotator_8" src="https://github.com/user-attachments/assets/fc4a0f08-04c7-4159-93a7-539ea7665136" />
 
 ---
 
@@ -52,16 +53,14 @@ This project demonstrates a **Zero Trust** approach to credential management by 
 ### **Execution Logs**
 
 When the function is triggered, **CloudWatch** captures the success message and identifies the tail end of the new password for verification.
-
-* **<img width="1366" height="539" alt="The_Zero_Trust_Secret_Rotator_11" src="https://github.com/user-attachments/assets/d6f6b951-1a1a-4b20-94f2-8d5b50457a92" />
-** - *Shows the successful log events in CloudWatch.*
+## *Shows the successful log events in CloudWatch.*
+<img width="1366" height="539" alt="The_Zero_Trust_Secret_Rotator_11" src="https://github.com/user-attachments/assets/d6f6b951-1a1a-4b20-94f2-8d5b50457a92" />
 
 ### **Vault Confirmation**
 
 The final verification confirms that the secret value in the vault matches the rotation log, proving the automation worked as intended.
-
-* **<img width="1366" height="583" alt="The_Zero_Trust_Secret_Rotator_12" src="https://github.com/user-attachments/assets/4ce6f15c-40c4-4b9f-8318-851d6df3a605" />
-** - *Shows the updated secret value ending in the correct characters.*
+## *Shows the updated secret value ending in the correct characters.*
+<img width="1366" height="583" alt="The_Zero_Trust_Secret_Rotator_12" src="https://github.com/user-attachments/assets/4ce6f15c-40c4-4b9f-8318-851d6df3a605" />
 
 ---
 
